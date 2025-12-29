@@ -1,0 +1,5 @@
+dotenv
+pydantic_settings
+typing
+google-api-python-client
+confluent_kafka

@@ -117,6 +117,7 @@ class YouTubeChatPoller(ChatPoller):
                 if snippet["type"] == "textMessageEvent":
                     message_data = {
                         "timestamp": snippet["publishedAt"],
+                        "video_id": self._video_id,
                         "author_name": author["displayName"],
                         "author_channel_id": author["channelId"],
                         "message": snippet["textMessageDetails"]["messageText"],
